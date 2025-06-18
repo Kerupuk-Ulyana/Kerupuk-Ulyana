@@ -42,7 +42,7 @@ function Products() {
           return (
             <article
               className="glass-card p-6 flex flex-col rounded-lg"
-              data-aos={i % 2 == 0 ? "fade-right" : "fade-left"}
+              data-aos="fade-right"
               data-aos-duration="1500"
             >
               <img

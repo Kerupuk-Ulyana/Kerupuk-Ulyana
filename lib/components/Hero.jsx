@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <section className="flex-grow flex items-center justify-center px-4 text-center py-20 max-w-7xl mx-auto">
-      <div data-aos="zoom-in" data-aos-duration="1000" className="max-w-4xl">
+      <div className="max-w-4xl">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-gradient leading-tight select-none">
           Kerupuk Kulit Bu Ulyanah
           <br />
