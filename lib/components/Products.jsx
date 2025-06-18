@@ -19,6 +19,14 @@ function Products() {
         "Kerupuk kulit tradisional dengan rasa gurih dan renyah yang khas, cocok sebagai teman makan atau camilan.",
       price: 20000,
     },
+    {
+      image:
+        "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5107794d-05bc-407f-ba60-81111489cedf.png",
+      title: "Kerupuk Kulit Original 3",
+      description:
+        "Kerupuk kulit tradisional dengan rasa gurih dan renyah yang khas, cocok sebagai teman makan atau camilan.",
+      price: 25500,
+    },
   ];
 
   return (
@@ -30,9 +38,13 @@ function Products() {
         Produk Kami
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-        {products.map((product) => {
+        {products.map((product, i) => {
           return (
-            <article className="glass-card p-6 flex flex-col rounded-lg">
+            <article
+              className="glass-card p-6 flex flex-col rounded-lg"
+              data-aos={i % 2 == 0 ? "fade-right" : "fade-left"}
+              data-aos-duration="1500"
+            >
               <img
                 src={product.image}
                 alt={"Gambar " + product.description.toLowerCase()}
