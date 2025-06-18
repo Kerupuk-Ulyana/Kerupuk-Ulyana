@@ -8,7 +8,7 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         <a href="#" className="flex items-center space-x-2">
           <img
-            src="/logo.png"
+            src="/logo.jpg"
             alt="Logo Kerupuk Kulit Bu Ulyanah Cap Matahari"
             className="h-12 w-12 rounded-full shadow flex-shrink-0"
           />
