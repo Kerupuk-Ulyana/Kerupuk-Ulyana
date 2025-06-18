@@ -1,7 +1,9 @@
+import { createWaHyperlink } from "../helpers/url";
+
 function FixedContact() {
   return (
     <a
-      href="https://wa.me/+6281296612090"
+      href={createWaHyperlink("Halo Kak! mau tanya tentang kerupuk kulit")}
       target="_blank"
       className="fixed bottom-0 right-0 p-4 block"
     >
