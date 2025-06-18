@@ -41,7 +41,8 @@ function Products() {
         {products.map((product, i) => {
           return (
             <article
-              className="glass-card p-6 flex flex-col rounded-lg"
+              key={"product"+i}
+              className="glass-card bg-red-500 p-6 flex flex-col rounded-lg"
               data-aos="fade-right"
               data-aos-duration="1500"
             >

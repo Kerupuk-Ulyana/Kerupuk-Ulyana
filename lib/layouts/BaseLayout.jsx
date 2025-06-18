@@ -5,6 +5,7 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import FixedContact from "../components/FixedContact";
+import { ClientOnly } from "vite-react-ssg";
 
 function BaseLayout() {
   return (
@@ -13,7 +14,11 @@ function BaseLayout() {
       <Hero />
       <Products />
       <About />
-      <Contact />
+      <ClientOnly>
+        {() => {
+          return <Contact />;
+        }}
+      </ClientOnly>
       <Footer />
       <FixedContact />
     </>
