@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "tailwindcss";
+
+/* * {
+  @apply border border-red-600;
+} */
+
+/* Custom savory color palette: yellow (amber), green (forest), warm brown-orange */
+:root {
+  --yellow-primary: #d97706; /* amber-700 - warm golden */
+  --green-primary: #166534; /* green-800 - deep forest green */
+  --brown-accent: #b45309; /* amber-700 toned brown/orange for warm accents */
+  --brown-muted: #78350f; /* darker brown for text or shadow accent */
+}
+
+/* Text gradient for hero with savory warm colors */
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--yellow-primary),
+    var(--green-primary),
+    var(--brown-accent)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism card with subtle warm tint */
+.glass-card {
+  background: rgba(255 247 205 / 0.15); /* soft warm cream */
+  backdrop-filter: saturate(180%) blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255 247 205 / 0.3);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.08);
+  color: #3f3f3f;
+}
+
+
+.btn-primary {
+  @apply bg-yellow-700 hover:bg-amber-500 rounded text-white p-3 inline-block;
+}
