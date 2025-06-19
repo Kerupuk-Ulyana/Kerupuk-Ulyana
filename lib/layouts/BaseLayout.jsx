@@ -12,13 +12,9 @@ function BaseLayout() {
     <>
       <Header />
       <Hero />
-      <Products />
+      <ClientOnly>{() => <Products />}</ClientOnly>
       <About />
-      <ClientOnly>
-        {() => {
-          return <Contact />;
-        }}
-      </ClientOnly>
+      <Contact />
       <Footer />
       <FixedContact />
     </>

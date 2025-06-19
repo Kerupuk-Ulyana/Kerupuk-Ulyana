@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="flex-grow flex items-center justify-center px-4 text-center py-20 max-w-7xl mx-auto">
+    <section className="min-h-[calc(100vh-4rem)] flex-grow flex items-center justify-center px-4 text-center py-20 max-w-7xl mx-auto">
       <div className="max-w-4xl">
         <h1
           data-aos="zoom-in"
